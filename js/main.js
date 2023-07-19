@@ -76,13 +76,18 @@ function SaveData() {
 
     SiteURL.addEventListener("focus", function() {
         SiteURL.style.border="2px solid #fec260"
-
-
      });
+    
+     document.getElementById("wrong").style.display="none"
+     document.getElementById("correct").style.display="none"
+     document.getElementById("wrong2").style.display="none"
+     document.getElementById("correct2").style.display="none"
+
+
     }else{
-        sweetAlert("Site Name or Url is not valid", `(1)Site name must contain at least 3 characters
-        (2)Site URL must be a valid one
-        (3)site URL must start with www.`, "error");
+        sweetAlert("Site Name or Url is not valid", `1- Site name must contain at least 3 characters
+        2- Site URL must be a valid one
+        3- site URL must start with www.`, "error");
     }
     
 }
@@ -139,8 +144,13 @@ function DeleteAllData() {
     localStorage.clear()
     data.splice(0)
     showData()
-    checkvalidationName()
-    checkvalidationURL()
+   
+    BookmarkName.style.border="none"
+    SiteURL.style.border="none"
+    document.getElementById("wrong").style.display="none"
+    document.getElementById("correct").style.display="none"
+    document.getElementById("wrong2").style.display="none"
+    document.getElementById("correct2").style.display="none"
 }
 
 
