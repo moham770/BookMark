@@ -72,9 +72,9 @@ function SaveData() {
 
      });
     }else{
-        sweetAlert("Site Name or Url is not valid", `(1) >>>Site name must contain at least 3 characters
-        (2) >>>Site URL must be a valid one
-        (3)>>> site URL must start with www.`, "error");
+        sweetAlert("Site Name or Url is not valid", `(1)Site name must contain at least 3 characters
+        (2)Site URL must be a valid one
+        (3)site URL must start with www.`, "error");
     }
     
 }
