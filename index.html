@@ -24,9 +24,17 @@
             <hr>
             <h2 class=" text-center mt-4 mb-5"><i class="fa-solid fa-bookmark text-frist mx-2"></i>Bookmark your favorite sites<i class=" mx-2 fa-solid fa-bookmark text-second"></i></h2>
             <label for="BookmarkName"  class="fw-bold fs-5"><i class="fa-solid fa-book-bookmark me-3"></i>Bookmark Name</label>
-            <input type="text"  oninput="checkvalidationName()"  class="form-control mb-4 mt-2" placeholder="Bookmark Name" id="BookmarkName">
+            <div class="nameinput">
+                <input  type="text"  oninput="checkvalidationName()"  class="form-control mb-4 mt-2" placeholder="Bookmark Name" id="BookmarkName">
+                <i class="fa-solid fa-circle-xmark wrong" id="wrong"></i>
+                <i class="fa-regular fa-circle-check correct" id="correct"></i>
+            </div>
             <label for="SiteURL" class="fw-bold fs-5"><i class="fa-solid fa-link me-3"></i>Site URL</label>
-            <input type="text" oninput="checkvalidationURL()" class="form-control mt-2 "placeholder="Website URL" id="SiteURL">
+            <div class="urlinput">
+                <input type="text" oninput="checkvalidationURL()" class="form-control mt-2 "placeholder="Website URL" id="SiteURL">
+                <i class="fa-solid fa-circle-xmark wrong2" id="wrong2"></i>
+                <i class="fa-regular fa-circle-check correct2" id="correct2"></i>
+            </div>
             <div class="btn btn-submit d-flex my-4" id="submit" onclick="SaveData()">Submit</div>
             <div id="deleteAll"></div>
             <hr>

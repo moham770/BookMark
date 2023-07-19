@@ -92,3 +92,41 @@ color: #fff;
         font-size: 20px;
     }
 }
+.nameinput{
+    position: relative;
+}
+.wrong{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: #fec260;
+    display: none;
+}
+.correct{
+ position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: green;
+display: none;
+}   
+.urlinput{
+    position: relative;
+}
+.wrong2{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: #fec260;
+    display: none;
+}
+.correct2{
+ position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: green;
+display: none;
+}   

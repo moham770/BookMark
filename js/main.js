@@ -19,17 +19,25 @@ function validationName(){
 function checkvalidationName(){
     if( validationName() ===true){
         BookmarkName.style.border=" 2px solid green"
+        document.getElementById("correct").style.display="block"
+        document.getElementById("wrong").style.display="none"
+
     }else{
         BookmarkName.style.border="  2px solid #fec260"
+        document.getElementById("wrong").style.display="block"
+        document.getElementById("correct").style.display="none"
 
     }
 }
 function checkvalidationURL(){
     if( validationURL() ===true){
         SiteURL.style.border=" 2px solid green"
+        document.getElementById("correct2").style.display="block"
+        document.getElementById("wrong2").style.display="none"
     }else{
         SiteURL.style.border="  2px solid #fec260"
-
+       document.getElementById("wrong2").style.display="block"
+        document.getElementById("correct2").style.display="none"
     }
 }
 
@@ -131,7 +139,12 @@ function DeleteAllData() {
     localStorage.clear()
     data.splice(0)
     showData()
+    checkvalidationName()
+    checkvalidationURL()
 }
+
+
+
 
 
 function visitWebsite(url){
