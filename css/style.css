@@ -130,3 +130,33 @@ display: none;
     color: green;
 display: none;
 }   
+.overlay{
+    width: 500px;
+    height: 300px;
+    
+}
+.overLay-container{
+    background-color: #0000003a;
+
+}
+.div{
+    width: 20px;
+    height: 20px;
+}
+.xmark{
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button{
+position: absolute;
+right: 10px;
+bottom: 15px;
+}
+.overlay-title{
+    width: 90%;
+}
+.paragraf{
+    font-size: 17px;
+}

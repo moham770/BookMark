@@ -4,6 +4,10 @@ let submit = document.getElementById("submit");
 let tbody = document.getElementById("tbody");
 let deleteAll = document.getElementById("deleteAll");
 let form =document.getElementById("form")
+let warnning =document.getElementById("overlay-container")
+let buttonOverlay=document.getElementById("button-overlay")
+let iconClose =document.getElementById("icon-close")
+
 
 let regexURL= /^(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}$)/i
 let regeName=/^\w{3,12}$/
@@ -82,16 +86,22 @@ function SaveData() {
      document.getElementById("correct").style.display="none"
      document.getElementById("wrong2").style.display="none"
      document.getElementById("correct2").style.display="none"
-
-
     }else{
-        sweetAlert("Site Name or Url is not valid", `1- Site name must contain at least 3 characters
-        2- Site URL must be a valid one
-        3- site URL must start with www.`, "error");
-    }
-    
-}
+    warnning.classList.remove("d-none")
 
+    
+    }
+}
+//**************************************************** */
+buttonOverlay.addEventListener("click",function(){
+    warnning.classList.add("d-none")
+})
+
+iconClose.addEventListener("click",()=>{
+    warnning.classList.add("d-none")
+})
+
+console.log(iconClose)
 // ******************************************************************************
 function showData() {
     let trs = ""
@@ -152,8 +162,6 @@ function DeleteAllData() {
     document.getElementById("wrong2").style.display="none"
     document.getElementById("correct2").style.display="none"
 }
-
-
 
 
 

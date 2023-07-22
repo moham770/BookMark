@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="shortcut icon" href="img/bookmark.png" type="image/x-icon"> -->
     <link rel="icon" href="img/bookmark.png">
     <title>Bookmark</title>
 </head>
@@ -51,7 +50,27 @@
             </tbody>
         </table>
     </div>
+    <div id="overlay-container" class="overLay-container d-none position-fixed start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center">
+        <div class="overlay bg-white position-relative">
+            <div class="circlres d-flex m-4">
+                 <div class="div bg-success rounded-circle mx-2"></div>
+            <div class="div bg-warning rounded-circle"></div>
+            <div class="div bg-danger rounded-circle  mx-2"></div>
+            </div>
+            <div class="xmark position-absolute" id="icon-close">
+                <i class="fa-solid fa-xmark" ></i>
+            </div>
+            <div class="overlay-text ">
 
+              <h5 class=" mt-4 mb-4 fw-bold overlay-title mx-auto ">Site Name or Url is not valid, Please follow the rules below :</h5>  
+            <p class="ms-4  paragraf"><i class="fa-regular fa-circle-right me-2 text-danger"></i>Site name must contain at least 3 characters </p>
+            <p class="ms-4  paragraf"><i class="fa-regular fa-circle-right me-2 text-danger"></i>Site URL must be a valid one </p>
+            </div>
+            <div class="button" >
+                <button id="button-overlay" class="btn btn-primary overlay-button px-4 py-2">OK</button>
+            </div>
+        </div>
+    </div>
 
 
 
