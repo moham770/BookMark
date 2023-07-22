@@ -100,8 +100,6 @@ buttonOverlay.addEventListener("click",function(){
 iconClose.addEventListener("click",()=>{
     warnning.classList.add("d-none")
 })
-
-console.log(iconClose)
 // ******************************************************************************
 function showData() {
     let trs = ""
